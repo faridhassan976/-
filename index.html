@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فريد - مطور الواجهة الأمامية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="farid.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>المهندس الرقمي<span class="logo-dot"></span></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">الرئيسية</a>
+                <a href="about.html" class="nav-link">عني</a>
+                <a href="programming.html" class="nav-link">رحلة التعلم</a>
+                <a href="projects.html" class="nav-link">مشاريعي</a>
+                <a href="services.html" class="nav-link">خدماتي</a>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">مرحباً، أنا</span>
+                        <span class="title-main">فريد</span>
+                        <span class="title-subtitle">مطور الواجهة الأمامية</span>
+                    </h1>
+                    <p class="hero-description">
+                        أحول الأفكار إلى مواقع ويب تفاعلية ومذهلة باستخدام أحدث التقنيات
+                        والتصاميم العصرية التي تترك انطباعاً لا يُنسى
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn-primary">
+                            <span>استكشف أعمالي</span>
+                            <i class="fas fa-rocket"></i>
+                        </a>
+                        <a href="services.html" class="btn-secondary">
+                            <span>احصل على خدمة</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="floating-card" data-tilt>
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="floating-card" data-tilt>
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="floating-card" data-tilt>
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="floating-card" data-tilt>
+                            <i class="fab fa-react"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>تمرير للأسفل</span>
+        </div>
+    </section>
+
+    <!-- Quick About Section -->
+    <section class="quick-about">
+        <div class="container">
+            <div class="section-header">
+                <h2>لماذا تختارني؟</h2>
+                <p>الخبرة والإبداع يلتقيان لخلق مواقع استثنائية</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>كود نظيف ومُحسَّن</h3>
+                    <p>أكتب كود عالي الجودة، سهل القراءة والصيانة، ومُحسَّن للأداء</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>تصميم متجاوب</h3>
+                    <p>مواقع تعمل بشكل مثالي على جميع الأجهزة والشاشات</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightning-bolt"></i>
+                    </div>
+                    <h3>أداء فائق السرعة</h3>
+                    <p>مواقع سريعة التحميل مع تحسين محركات البحث SEO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>فريد</h3>
+                    <p>مطور واجهة أمامية محترف، أحول أفكارك إلى واقع رقمي مذهل</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/191oGzo6bK/" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        
+                        <a href="https://www.tiktok.com/@mohandesraqamy?_t=ZS-8x3ZMUlNs38&_r=1" class="social-link tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/201208938661" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">عني</a></li>
+                        <li><a href="programming.html">رحلة التعلم</a></li>
+                        <li><a href="projects.html">مشاريعي</a></li>
+                        <li><a href="services.html">خدماتي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>خدماتي</h4>
+                    <ul>
+                        <li><a href="services.html">تصميم وتطوير موقع إلكتروني تعريفي </a></li>
+                        <li><a href="services.html">تطوير واجهة مستخدم لتطبيق ويب </a></li>
+                        <li><a href="services.html">تحويل تصميم (PSD/Figma/XD) إلى HTML/CSS/JS</a></li>
+                        <li><a href="services.html">تصميم موقع صفحة واحدة</a></li>
+                        <li><a href="services.html">إصلاح وتحسين موقع جاهز </a></li>
+                        <li><a href="services.html">متاجر إلكترونية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معي</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 01208938661</p>
+                        <p><i class="fas fa-envelope"></i> front1.end.devel0ber@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> مصر</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 فريد. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="farid.js"></script>
+</body>
+</html>

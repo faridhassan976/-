@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتي - فريد</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="farid.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>المهندس الرقمي<span class="logo-dot"></span></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="about.html" class="nav-link">عني</a>
+                <a href="programming.html" class="nav-link">رحلة التعلم</a>
+                <a href="projects.html" class="nav-link">مشاريعي</a>
+                <a href="services.html" class="nav-link active">خدماتي</a>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-aos="fade-up">خدماتي البرمجية</h1>
+                <p data-aos="fade-up" data-aos-delay="100">حلول تقنية شاملة لتحقيق رؤيتك الرقمية</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Website Design Service -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>تصميم وتطوير موقع إلكتروني تعريفي</h3>
+                    <p>هذه الخدمة مثالية للشركات أو الأفراد الذين يحتاجون إلى وجود بسيط واحترافي على الإنترنت لعرض معلوماتهم الأساسية وخدماتهم.</p>
+                    <div class="service-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> تصميم متجاوب لجميع الأجهزة</li>
+                            <li><i class="fas fa-check"></i> واجهة مستخدم حديثة وجذابة</li>
+                            <li><i class="fas fa-check"></i> نموذج اتصال مباشر</li>
+                            <li><i class="fas fa-check"></i> تحسين محركات البحث SEO</li>
+                            <li><i class="fas fa-check"></i> سهولة التحديث</li>
+                        </ul>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">8000 جنيه</span>
+                        <span class="period">للموقع الكامل</span>
+                    </div>
+                    <button class="service-btn" onclick="openOrderModal('8000' ,'تصميم وتطوير موقع إلكتروني تعريفي')">
+                        <span>اطلب الخدمة</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+
+                <!-- Web Development Service -->
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-badge">الأشهر</div>
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>تطوير واجهة مستخدم لتطبيق ويب </h3>
+                    <p>تركز هذه الخدمة على بناء واجهة المستخدم الأمامية (Front-End) لتطبيق ويب متكامل، مثل نظام إدارة محتوى أو لوحة تحكم.</p>
+                    <div class="service-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> تجربة مستخدم محسنة </li>
+                            <li><i class="fas fa-check"></i> واجهة تفاعلية وديناميكية</li>
+                            <li><i class="fas fa-check"></i> تصميم وحدات قابلة لإعادة الاستخدام</li>
+                            <li><i class="fas fa-check"></i> سرعة الاستجابة والتفاعل</li>
+                            <li><i class="fas fa-check"></i> دعم المتصفحات المختلفة</li>
+                         
+                        </ul>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">30000 جنيه</span>
+                        <span class="period">للتطبيق الكامل</span>
+                    </div>
+                    <button class="service-btn" onclick="openOrderModal('30000' ,'تطوير واجهة مستخدم لتطبيق ويب')">
+                        <span>اطلب الخدمة</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+
+                <!-- Performance Optimization Service -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>تحويل تصميم (PSD/Figma/XD) إلى HTML/CSS/JS </h3>
+                    <p>هذه الخدمة تحول التصميمات المرئية التي يقدمها العميل (عادةً في صيغ PSD، Figma، Adobe XD) إلى كود Front-End وظيفي.</p>
+                    <div class="service-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> دقة في التنفيذ</li>
+                            <li><i class="fas fa-check"></i> كود نظيف ومنظم</li>
+                            <li><i class="fas fa-check"></i> تصميم متجاوب مع جميع الأجهزة</li>
+                            <li><i class="fas fa-check"></i> حسين الأداء</li>
+                            <li><i class="fas fa-check"></i> إضافة تأثيرات وتفاعلات</li>
+                        </ul>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">9000 جنيه</span>
+                        <span class="period">للموقع الواحد</span>
+                    </div>
+                    <button class="service-btn" onclick="openOrderModal('تحويل تصميم (PSD/Figma/XD) إلى HTML/CSS/JS', '9000')"></button>
+                   
+                        <span>اطلب الخدمة</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+
+                <!-- Landing Page Service -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>تصميم موقع صفحة واحدة </h3>
+                    <p>تصميم موقع مكون من صفحة واحدة مع امكانية زيادة عدد الصفحات</p>
+                    <div class="service-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> تصميم جذاب ومقنع</li>
+                            <li><i class="fas fa-check"></i> نماذج تفاعلية</li>
+                            <li><i class="fas fa-check"></i> أزرار دعوة للعمل مُحسَّنة</li>
+                            <li><i class="fas fa-check"></i> تتبع التحويلات</li>
+                            <li><i class="fas fa-check"></i> تحسين للظهور في محركات البحث</li>
+                            <li><i class="fas fa-check"></i> تصميم متجاوب مع جميع الأجهزة</li>
+                        </ul>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">800 جنيه</span>
+                        <span class="period">للصفحة الواحدة</span>
+                    </div>
+                    <button class="service-btn" onclick="openOrderModal('تصميم موقع صفحة واحدة', '800')">
+                        <span>اطلب الخدمة</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+
+                <!-- Website Maintenance Service -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>إصلاح وتحسين موقع جاهز (Front-End Only)</h3>
+                    <p>تركز هذه الخدمة على إصلاح المشاكل في المواقع الجاهزة وتحسين الموقع من حيث التصميم</p>
+                    <div class="service-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> تسريع أداء الموقع وتحسين وقت التحميل </li>
+                            <li><i class="fas fa-check"></i> تصليح المشاكل في التصميم أو التنسيق </li>
+                            <li><i class="fas fa-check"></i> جعله متجاوب بشكل كامل على جميع الأجهزة </li>
+                            <li><i class="fas fa-check"></i> تحسين الكود وجعله منظم وقابل للتطوير</li>
+                            <li><i class="fas fa-check"></i> تحسين الشكل الجمالي وواجهة المستخدم </li>
+                            <li><i class="fas fa-check"></i> إضافة ميزات تفاعلية باستخدام JavaScript </li>
+                        </ul>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">500 جنيه</span>
+                        <span class="period">للصفحة الواحدة</span>
+                    </div>
+                    <button class="service-btn" onclick="openOrderModal('إصلاح وتحسين موقع جاهز (Front-End Only)', '500')">
+                        <span>اطلب الخدمة</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+
+                <!-- E-commerce Service -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>متاجر إلكترونية</h3>
+                    <p>تصميم واجهة مستخدمة مميزة وسهلة التصفح والفهم لمتجر إلكتروني وإضافة تفاعلات مميزة وإحترافية بواسطة JavaScript </p>
+                    <div class="service-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> واجهة متجر احترافية</li>
+                            <li><i class="fas fa-check"></i> سلة تسوق متطورة</li>
+                            <li><i class="fas fa-check"></i> تفاعلات إحترافية</li>
+                            <li><i class="fas fa-check"></i> نظام تواصل بسيط </li>
+                            <li><i class="fas fa-check"></i> عرض مميز للمنتجات </li>
+                            <li><i class="fas fa-check"></i> سرعة في تنفيذ المتجر</li>
+                        </ul>
+                    </div>
+                    <div class="service-price">
+                        <span class="price">40000 جنيه</span>
+                        <span class="period">للمتجر الكامل</span>
+                    </div>
+                    <button class="service-btn" onclick="openOrderModal('متاجر إلكترونية', '40000')">
+                        <span>اطلب الخدمة</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-aos="fade-up">لماذا تختارني؟</h2>
+                <p data-aos="fade-up" data-aos-delay="100">مميزات تجعلني الخيار الأفضل لمشروعك القادم</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-clock"></i>
+                    <h3>تسليم سريع</h3>
+                    <p>التزام كامل بالمواعيد المحددة</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>ضمان الجودة</h3>
+                    <p>معايير عالية في كل مشروع</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-headset"></i>
+                    <h3>دعم مستمر</h3>
+                    <p>متابعة ما بعد التسليم</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>أسعار منافسة</h3>
+                    <p>قيمة استثنائية مقابل السعر</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>طلب خدمة</h2>
+                <span class="close" onclick="closeOrderModal()">&times;</span>
+            </div>
+            <form id="orderForm" class="order-form">
+                <div class="service-info">
+                    <h3 id="selectedService">اسم الخدمة</h3>
+                    <p class="service-price-modal">السعر: <span id="selectedPrice">0</span> جنيه</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="clientName">الاسم الكامل *</label>
+                    <input type="text" id="clientName" name="clientName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="clientAge">العمر *</label>
+                    <input type="number" id="clientAge" name="clientAge" min="18" max="100" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="projectDetails">تفاصيل المشروع *</label>
+                    <textarea id="projectDetails" name="projectDetails" rows="5" 
+                              placeholder="صف مشروعك بالتفصيل: ما هو نوع الموقع المطلوب؟ ما هي الميزات المطلوبة؟ هل لديك تصميم جاهز؟" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="timeline">الجدول الزمني المطلوب</label>
+                    <select id="timeline" name="timeline">
+                        <option value="أسبوع واحد">أسبوع واحد</option>
+                        <option value="أسبوعين">أسبوعين</option>
+                        <option value="شهر واحد" selected>شهر واحد</option>
+                        <option value="أكثر من شهر">أكثر من شهر</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">الميزانية المتاحة</label>
+                    <select id="budget" name="budget">
+                        <option value="حسب السعر المحدد">حسب السعر المحدد</option>
+                        <option value="أقل من السعر المحدد">أقل من السعر المحدد</option>
+                        <option value="أعلى من السعر المحدد">أعلى من السعر المحدد</option>
+                        <option value="مفتوح للتفاوض">مفتوح للتفاوض</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span>إرسال الطلب</span>
+                    <i class="fab fa-whatsapp"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>فريد</h3>
+                    <p>مطور واجهة أمامية محترف، أحول أفكارك إلى واقع رقمي مذهل</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/191oGzo6bK/" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                      
+                        <a href="https://www.tiktok.com/@mohandesraqamy?_t=ZS-8x3ZMUlNs38&_r=1" class="social-link tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/201208938661" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">عني</a></li>
+                        <li><a href="programming.html">رحلة التعلم</a></li>
+                        <li><a href="projects.html">مشاريعي</a></li>
+                        <li><a href="services.html">خدماتي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>خدماتي</h4>
+                    <ul>
+                       <li><a href="services.html">تصميم وتطوير موقع إلكتروني تعريفي </a></li>
+                        <li><a href="services.html">تطوير واجهة مستخدم لتطبيق ويب </a></li>
+                        <li><a href="services.html">تحويل تصميم (PSD/Figma/XD) إلى HTML/CSS/JS</a></li>
+                        <li><a href="services.html">تصميم موقع صفحة واحدة</a></li>
+                        <li><a href="services.html">إصلاح وتحسين موقع جاهز </a></li>
+                        <li><a href="services.html">متاجر إلكترونية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معي</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 01208938661</p>
+                        <p><i class="fas fa-envelope"></i> front1.end.devel0ber@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> مصر</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 فريد. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="farid.js"></script>
+</body>
+</html>

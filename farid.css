@@ -1913,6 +1913,25 @@ body {
         width: 150px;
         height: 150px;
     }
+
+    .hero-title {
+        margin-bottom: 1.2rem !important;
+        text-align: center !important;
+        word-break: break-word !important;
+    }
+    .title-line, .title-main, .title-subtitle {
+        text-align: center !important;
+        word-break: break-word !important;
+        width: 100% !important;
+        display: block !important;
+    }
+    .title-main {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+    }
+    .title-subtitle {
+        font-size: 1.1rem !important;
+    }
 }
 
 /* Print Styles */

@@ -13,10 +13,7 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <!-- Particle Background -->
     <div id="particles-js"></div>
-    
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -41,8 +38,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- Programming Hero -->
     <section class="page-hero">
         <div class="container">
             <div class="hero-content">
@@ -51,26 +46,15 @@
             </div>
         </div>
     </section>
-
-    <!-- Learning Journey -->
     <section class="journey-section">
         <div class="container">
             <div class="journey-content">
                 <div class="journey-story" data-aos="fade-up">
                     <h2>كيف بدأت رحلتي في البرمجة؟</h2>
-                    <p class="lead">
-                        كل قصة نجاح تبدأ بحلم وتنتهي بالعمل الجاد والإصرار
-                    </p>
-                    <p>
-                        بدأت رحلتي في عالم البرمجة منذ عدة سنوات، عندما كنت مفتوناً بجمال المواقع الإلكترونية
-                        وتساءلت كيف يمكن إنشاء هذه التحف الرقمية. كانت البداية صعبة، لكن الشغف كان أقوى من أي عقبة.
-                    </p>
-                    <p>
-                        قضيت ساعات لا تحصى في التعلم والممارسة، وكل خطأ كان درساً جديداً، وكل نجاح صغير 
-                        كان دافعاً للمتابعة. اليوم، أفتخر بما وصلت إليه وأسعى دائماً لتطوير مهاراتي أكثر.
-                    </p>
+                    <p class="lead">كل قصة نجاح تبدأ بحلم وتنتهي بالعمل الجاد والإصرار</p>
+                    <p>بدأت رحلتي في عالم البرمجة منذ عدة سنوات، عندما كنت مفتوناً بجمال المواقع الإلكترونية وتساءلت كيف يمكن إنشاء هذه التحف الرقمية. كانت البداية صعبة، لكن الشغف كان أقوى من أي عقبة.</p>
+                    <p>قضيت ساعات لا تحصى في التعلم والممارسة، وكل خطأ كان درساً جديداً، وكل نجاح صغير كان دافعاً للمتابعة. اليوم، أفتخر بما وصلت إليه وأسعى دائماً لتطوير مهاراتي أكثر.</p>
                 </div>
-
                 <div class="timeline">
                     <div class="timeline-item" data-aos="fade-right">
                         <div class="timeline-marker"></div>
@@ -104,16 +88,12 @@
             </div>
         </div>
     </section>
-
-    <!-- Resources Section -->
     <section class="resources-section">
         <div class="container">
             <div class="section-header">
                 <h2 data-aos="fade-up">المصادر التي تعلمت منها</h2>
                 <p data-aos="fade-up" data-aos-delay="100">أهم القنوات والمواقع التي ساعدتني في رحلة التعلم</p>
             </div>
-
-            <!-- YouTube Channels -->
             <div class="resources-category">
                 <h3 data-aos="fade-up">القنوات التعليمية</h3>
                 <div class="resource-grid">
@@ -152,8 +132,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Learning Websites -->
             <div class="resources-category">
                 <h3 data-aos="fade-up">المواقع التعليمية</h3>
                 <div class="resource-grid">
@@ -227,8 +205,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Tips Section -->
     <section class="tips-section">
         <div class="container">
             <div class="section-header">
@@ -259,8 +235,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -316,14 +290,18 @@
         </div>
     </footer>
     
-    <!-- Floating Action Buttons -->
     <div class="floating-action-buttons">
         <a href="https://wa.me/201559107092" class="fab-btn whatsapp-btn" target="_blank" aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
+        <button id="pwa-install" class="fab-btn pwa-install-btn" style="display:none;" aria-label="تثبيت التطبيق">
+            <span class="pwa-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v14m0 0l-4-4m4 4l4-4" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="17.5" r="4.5" fill="#14b8a6" opacity=".18"/></svg>
+            </span>
+            <span class="pwa-label">تثبيت التطبيق</span>
+        </button>
     </div>
 
-    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
@@ -333,12 +311,6 @@
         });
       }
     </script>
-    <button id="pwa-install" class="btn-primary" style="display:none;">
-      <span class="pwa-icon">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v14m0 0l-4-4m4 4l4-4" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="17.5" r="4.5" fill="#14b8a6" opacity=".18"/></svg>
-      </span>
-      تثبيت التطبيق
-    </button>
     <script src="farid.js"></script>
     <script src="pwa-install.js"></script>
 </body>

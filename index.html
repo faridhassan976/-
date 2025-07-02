@@ -14,6 +14,13 @@
 </head>
 <body>
     
+    <div id="splash-screen">
+        <div class="splash-loader">
+            <div class="splash-spinner"></div>
+            <img src="صور/icon-192.png" alt="شعار الموقع" class="splash-logo" />
+        </div>
+    </div>
+    
     <div id="particles-js"></div>
     
     <nav class="navbar" id="navbar">
@@ -991,7 +998,12 @@
         });
       }
     </script>
-    <button id="pwa-install" class="btn-primary" style="display:none;position:fixed;bottom:24px;left:24px;z-index:9999;">📲 تثبيت التطبيق</button>
+    <button id="pwa-install" class="btn-primary" style="display:none;">
+      <span class="pwa-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v14m0 0l-4-4m4 4l4-4" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="17.5" r="4.5" fill="#14b8a6" opacity=".18"/></svg>
+      </span>
+      تثبيت التطبيق
+    </button>
     <script src="farid.js"></script>
     <script src="pwa-install.js"></script>
 </body>

@@ -2488,3 +2488,62 @@ body {
   height: 1.4em;
   margin-left: 0.1em;
 }
+
+/* PWA Install Floating Button */
+.pwa-install-btn {
+  background: linear-gradient(135deg, #6366f1, #14b8a6, #f59e0b, #10b981);
+  background-size: 300% 300%;
+  animation: pwa-gradient-rotate 3s linear infinite;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(99,102,241,0.18);
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s;
+  overflow: visible;
+  gap: 0.2em;
+}
+.pwa-install-btn:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 8px 24px rgba(99,102,241,0.22);
+}
+@keyframes pwa-gradient-rotate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.pwa-install-btn .pwa-icon {
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.10);
+  animation: pwa-bounce 1.2s infinite alternate;
+}
+@keyframes pwa-bounce {
+  0% { transform: scale(1) translateY(0); }
+  100% { transform: scale(1.13) translateY(-4px); }
+}
+.pwa-install-btn .pwa-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 1px;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 4px rgba(99,102,241,0.10);
+  pointer-events: none;
+}

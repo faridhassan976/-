@@ -689,6 +689,15 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('🚀 Farid Portfolio Website Loaded Successfully!');
 });
 
+// Splash Screen Hide
+window.addEventListener('load', function() {
+  const splash = document.getElementById('splash-screen');
+  if (splash) {
+    splash.style.opacity = '0';
+    setTimeout(() => splash.style.display = 'none', 500);
+  }
+});
+
 // Add CSS animations
 const style = document.createElement('style');
 style.textContent = `

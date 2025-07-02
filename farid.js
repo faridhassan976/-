@@ -685,7 +685,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cursor.style.background = 'rgba(99, 102, 241, 0.5)';
         });
     });
-
+    
     console.log('🚀 Farid Portfolio Website Loaded Successfully!');
 });
 
@@ -749,6 +749,7 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
 // 🔐 حماية من التلاعب في الكونسول
 (function() {
   const preventConsoleHack = () => {
@@ -796,6 +797,7 @@ document.head.appendChild(style);
   preventConsoleHack();
   blockInspectTools();
 })();
+
 // تعطيل كلك يمين
 document.addEventListener('contextmenu', function(event) {
     event.preventDefault();

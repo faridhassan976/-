@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="farid.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <!-- Particle Background -->
@@ -27,6 +28,7 @@
                 <a href="programming.html" class="nav-link">رحلة التعلم</a>
                 <a href="projects.html" class="nav-link">مشاريعي</a>
                 <a href="services.html" class="nav-link">خدماتي</a>
+                
             </div>
             <div class="nav-right">
                 <button id="theme-toggle" class="theme-toggle">
@@ -242,17 +244,26 @@
             </div>
         </div>
     </footer>
-    
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('sw.js');
+        });
+      }
+    </script>
+
     <!-- Floating Action Buttons -->
     <div class="floating-action-buttons">
         <a href="https://wa.me/201559107092" class="fab-btn whatsapp-btn" target="_blank" aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
-        
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    </div>
+    <button id="pwa-install" class="btn-primary" style="display:none;position:fixed;bottom:24px;left:24px;z-index:9999;">📲 تثبيت التطبيق</button>
     <script src="farid.js"></script>
+    <script src="pwa-install.js"></script>
 </body>
 </html>

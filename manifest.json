@@ -1,0 +1,21 @@
+{
+  "name": "المهندس الرقمي - فريد",
+  "short_name": "فريد",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "description": "موقع فريد - مطور الواجهة الأمامية. استكشف خدماتي ومشاريعي التقنية.",
+  "icons": [
+    {
+      "src": "صور/icon-512.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "صور/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
